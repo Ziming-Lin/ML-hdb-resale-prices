@@ -59,8 +59,8 @@ With RMSE of 63308 and mean percentage error of 10.82% on the training set, the 
 
 - Resale Price = Model Intercept + Categorical Coefficients + Σ(Numerical Coefficient X Standard Scale Numerical Variable)
 - Model intercept ($339,246) acts as baseline price
-- From scale of coefficients, station name feature is usually the main price affecting factor
-- While it seems that floor area is only slightly ahead of remaining lease feature, floor area should be grouped with flat type feature and assessed as flat size
+- From the scale of coefficients, station name feature is usually the main price affecting factor
+- While it seems that floor area feature is only slightly ahead of remaining lease feature, the size of a flat should be wholly assessed by grouping floor area and flat type
 - Feature importance is then:
 > Flat Size > Remaining Lease > Unit Level > Distance to nearest MRT Station > Building Height
 
@@ -68,6 +68,7 @@ With RMSE of 63308 and mean percentage error of 10.82% on the training set, the 
 ## XGBoost Model
 
 Although XGBoost models have a tendency to overfit training datasets, here the XGBoost model is able to perform better than the previous linear regression model.
+
 
 <ins> Comparison of Test Set Scores </ins>
 
@@ -106,4 +107,4 @@ Although XGBoost models have a tendency to overfit training datasets, here the X
 
 ## Planned Features
 
-Pre-processing pipeline for newer test data.
+- Pre-processing pipeline for newer test data
